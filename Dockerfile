@@ -16,5 +16,5 @@ RUN set -ex \
 
 VOLUME ["/data"]
 WORKDIR /data
-ENTRYPOINT ["terraform"]
+ENTRYPOINT ["make"]
 
