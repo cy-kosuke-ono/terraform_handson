@@ -42,7 +42,9 @@ variable "private_subnet_ids" {
 }
 
 variable "instance_types" {
-  default = {}
+  default = {
+    "test" = "t2.micro"
+  }
 }
 
 variable "instance_counts" {
@@ -50,5 +52,5 @@ variable "instance_counts" {
 }
 
 variable "uploaded_key" {
-  default = ""
+  default = "cy-kosuke-ono-tech_pf"
 }
