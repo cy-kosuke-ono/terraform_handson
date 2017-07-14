@@ -37,3 +37,7 @@ variable "private_subnet_ids" {
 variable "uploaded_key" {
   type = "string"
 }
+
+variable "common_security_group_ids" {
+  type = "map"
+}

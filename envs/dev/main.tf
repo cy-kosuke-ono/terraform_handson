@@ -38,4 +38,6 @@ module "dev" {
   public_subnet_ids  = "${var.public_subnet_ids}"
   private_subnet_ids = "${var.private_subnet_ids}"
   uploaded_key       = "${var.uploaded_key}"
+
+  common_security_group_ids = "${module.common.common_security_group_ids}"
 }
