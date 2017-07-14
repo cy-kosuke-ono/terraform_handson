@@ -40,3 +40,15 @@ variable "private_subnet_ids" {
     "subnet-0b6af653",
   ]
 }
+
+variable "instance_types" {
+  default = {}
+}
+
+variable "instance_counts" {
+  default = {}
+}
+
+variable "uploaded_key" {
+  default = ""
+}
