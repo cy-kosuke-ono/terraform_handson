@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-handson"
+    bucket = "ono-terraform-handson"
     key    = "dev/terraform.tfstate"
     region = "ap-northeast-1"
   }
