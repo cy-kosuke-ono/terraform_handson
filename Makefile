@@ -27,3 +27,7 @@ docker-tfplan:
 docker-tfapply:
 	docker run --env-file env.list \
 		-i -v ${PWD}:/data cybird/terraform:0.9.11 apply ENV=${ENV}
+
+docker-tfshow:
+	docker run --env-file env.list \
+		-i -v ${PWD}:/data cybird/terraform:0.9.11 show ENV=${ENV} ARGS=${ARGS}
