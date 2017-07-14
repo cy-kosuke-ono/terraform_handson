@@ -16,3 +16,27 @@ variable "availability_zones" {
     "ap-northeast-1c",
   ]
 }
+
+variable "vpc_id" {
+  default = "vpc-b1e862d5"
+}
+
+variable "vpc_cidrs" {
+  default = [
+    "10.200.0.0/16",
+  ]
+}
+
+variable "public_subnet_ids" {
+  default = [
+    "subnet-42c29134",
+    "subnet-f96ff3a1",
+  ]
+}
+
+variable "private_subnet_ids" {
+  default = [
+    "subnet-48c2913e",
+    "subnet-0b6af653",
+  ]
+}
